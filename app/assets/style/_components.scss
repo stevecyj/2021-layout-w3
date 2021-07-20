@@ -1,0 +1,67 @@
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+// 門市據點 & 常見問題 banner
+.bannerBg {
+  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true)
+    no-repeat;
+  height: 304px;
+  background-size: cover;
+  background-position: center center;
+  &-title {
+    font-size: 64px;
+    line-height: 90px;
+    font-weight: 700;
+  }
+  @include pad {
+    &-title {
+      font-size: 48px;
+      line-height: 67px;
+    }
+  }
+  @include mobile {
+    & {
+      height: 143px;
+    }
+    &-title {
+      font-size: 28px;
+      line-height: 40px;
+    }
+  }
+}
+
+//pagination
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.page {
+  &-link {
+    display: block;
+    border: 1px solid $gray-500;
+    color: $gray-500;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 24px;
+    &.active,
+    &:hover {
+      background: $dark;
+      color: $white;
+    }
+    &-next {
+      background: $gray-100;
+    }
+  }
+  @include mobile {
+    &-link {
+      padding: 8px 9px;
+      font-size: 11px;
+      line-height: 15px;
+    }
+  }
+}
