@@ -1312,10 +1312,12 @@ body {
       display: block;
       color: #fff;
       font-size: 20px;
-      line-height: 28px;
-      padding-left: 40px; }
+      line-height: 1.5;
+      padding-left: 64px; }
       .headerNav-link:hover {
-        opacity: 0.5; }
+        color: #fff45c;
+        transition: color 1s ease;
+        cursor: pointer; }
   @media (max-width: 992px) {
     .header {
       padding: 30px 39px; } }
@@ -1343,13 +1345,15 @@ body {
   .footerNav-link {
     display: block;
     color: #ffffff;
-    line-height: 22px;
+    line-height: 1.5;
     padding-right: 48px; }
     .footerNav-link:hover {
-      opacity: 0.5; }
+      color: #fff45c;
+      transition: color 1s ease;
+      cursor: pointer; }
 
 .footerContact-item {
-  margin-bottom: 19px; }
+  margin-bottom: 16px; }
 
 .footerContact-icon {
   width: 44px;
