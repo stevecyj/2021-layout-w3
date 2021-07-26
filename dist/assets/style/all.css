@@ -148,6 +148,10 @@ a {
 .hoverLink-opacity-5:hover {
   opacity: 0.5; }
 
+.hoverLink-yellow:hover {
+  color: #fff45c;
+  transition: color 1s ease; }
+
 .bg-light {
   background: #fbf2f2; }
 
@@ -1314,10 +1318,6 @@ body {
       font-size: 20px;
       line-height: 1.5;
       padding-left: 64px; }
-      .headerNav-link:hover {
-        color: #fff45c;
-        transition: color 1s ease;
-        cursor: pointer; }
   @media (max-width: 992px) {
     .header {
       padding: 30px 39px; } }
@@ -1340,72 +1340,61 @@ body {
             background: #650300;
             opacity: 1; } }
 
-.footerNav {
-  margin-bottom: 36px; }
-  .footerNav-link {
-    display: block;
-    color: #ffffff;
-    line-height: 1.5;
-    padding-right: 48px; }
-    .footerNav-link:hover {
-      color: #fff45c;
-      transition: color 1s ease;
-      cursor: pointer; }
-
-.footerContact-item {
-  margin-bottom: 16px; }
-
-.footerContact-icon {
-  width: 44px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 17px; }
-
-.footerContact-link {
-  display: block;
-  font-family: "Roboto";
-  color: #ffffff;
-  font-size: 36px;
-  line-height: 48px; }
-  .footerContact-link:hover {
-    opacity: 0.5; }
-
-.footerSocial-item {
-  margin-right: 32px; }
-  .footerSocial-item:nth-last-child(1) {
-    margin-right: 0; }
-
-.footerSocial-link {
-  display: block; }
-  .footerSocial-link:hover {
-    opacity: 0.5; }
-
-@media (max-width: 992px) {
+.footer {
+  padding-bottom: 39px; }
   .footerNav {
-    margin-bottom: 26px; }
+    margin-bottom: 36px; }
     .footerNav-link {
-      padding-right: 40px; }
+      display: block;
+      color: #ffffff;
+      line-height: 1.5;
+      padding-right: 48px; }
   .footerContact-item {
-    margin-bottom: 8px; }
+    margin-bottom: 16px; }
   .footerContact-icon {
-    width: 24px;
-    margin-right: 12px; }
+    width: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px; }
   .footerContact-link {
-    font-size: 20px;
-    line-height: 26px; }
+    display: block;
+    font-family: "Roboto";
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 1.5; }
   .footerSocial-item {
-    margin-right: 24px; }
-  .footerSocial-icon {
-    width: 24px; } }
-
-@media (max-width: 767px) {
-  .footerNav {
-    display: none; }
-  .footerContact-icon {
-    width: 20px; }
-  .footerContact-link {
-    font-size: 16px;
-    line-height: 21px; } }
+    margin-right: 32px; }
+    .footerSocial-item:nth-last-child(1) {
+      margin-right: 0; }
+  .footerSocial-link {
+    display: block; }
+    .footerSocial-link:hover {
+      opacity: 0.5; }
+  @media (max-width: 992px) {
+    .footerNav {
+      margin-bottom: 26px; }
+      .footerNav-link {
+        padding-right: 40px; }
+    .footerContact-item {
+      margin-bottom: 8px; }
+    .footerContact-icon {
+      width: 24px;
+      margin-right: 12px; }
+    .footerContact-link {
+      font-size: 20px;
+      line-height: 26px; }
+    .footerSocial-item {
+      margin-right: 24px; }
+    .footerSocial-icon {
+      width: 24px; } }
+  @media (max-width: 767px) {
+    .footerNav {
+      display: none; }
+    .footerContact-icon {
+      width: 20px; }
+    .footerContact-link {
+      font-size: 16px;
+      line-height: 21px; } }
 
 @media (max-width: 767px) {
   .footerBelow .copyright {
@@ -1413,12 +1402,9 @@ body {
   .footerBelow .terms {
     width: 100%; } }
 
-.copyright-logo {
-  margin-right: 38px; }
-
 .copyright-text {
   font-family: "Roboto";
-  line-height: 21px; }
+  line-height: 1.5; }
 
 @media (max-width: 992px) {
   .copyright-logo {
@@ -1454,5 +1440,266 @@ body {
   .termsBody-logo {
     display: block;
     width: 46px; } }
+
+.mainTitle {
+  font-size: 48px;
+  line-height: 67px;
+  font-weight: 700;
+  text-align: center; }
+  @media (max-width: 992px) {
+    .mainTitle {
+      font-size: 32px;
+      line-height: 45px; } }
+  @media (max-width: 767px) {
+    .mainTitle {
+      font-size: 24px;
+      line-height: 33px; } }
+
+.mainBanner {
+  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 840px; }
+  .mainBanner-subtitle {
+    font-size: 36px;
+    line-height: 54px; }
+  .mainBanner-title {
+    font-size: 64px;
+    line-height: 96px;
+    font-weight: 700; }
+
+@media (max-width: 992px) {
+  .mainBanner-subtitle {
+    font-size: 20px;
+    line-height: 39px; }
+  .mainBanner-title {
+    font-size: 48px;
+    line-height: 67px; } }
+
+@media (max-width: 767px) {
+  .mainBanner {
+    height: 394px; }
+    .mainBanner-subtitle {
+      font-size: 16px;
+      line-height: 22px; }
+    .mainBanner-title {
+      font-size: 32px;
+      line-height: 45px; } }
+
+.feature-item {
+  width: 20%; }
+
+.feature-icon {
+  margin: 0 auto 40px auto; }
+
+.feature-title {
+  text-align: center;
+  color: #650300;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 700;
+  margin-bottom: 4px; }
+
+@media (max-width: 992px) {
+  .feature-item {
+    width: 35%;
+    margin-bottom: 40px; }
+  .feature-icon {
+    width: 80px;
+    margin: 0 auto 16px auto; }
+  .feature-title {
+    text-align: center;
+    color: #650300;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-bottom: 8px; } }
+
+@media (max-width: 767px) {
+  .feature-item {
+    width: 90%; } }
+
+.classGlasses-pic {
+  width: 60%; }
+
+.classGlasses-mobileicon {
+  display: none; }
+
+.classGlasses-icon {
+  width: 48px;
+  margin-right: 8px; }
+
+.classGlasses-title {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 63px; }
+
+@media (max-width: 992px) {
+  .classGlasses-item {
+    flex-direction: row; }
+  .classGlasses-icon {
+    width: 32px; }
+  .classGlasses-title {
+    font-size: 28px;
+    line-height: 37px; }
+    .classGlasses-title::before {
+      width: 32px;
+      height: 25px; } }
+
+@media (max-width: 767px) {
+  .classGlasses-item {
+    position: relative; }
+  .classGlasses-pic {
+    width: 100%;
+    margin: 0 auto; }
+  .classGlasses-mobileicon {
+    display: block;
+    width: 32px;
+    margin-right: 8px; }
+  .classGlasses-icon {
+    display: none; }
+  .classGlasses-title {
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); } }
+
+.cobrandBg {
+  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true) no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.cobrand-item {
+  position: relative;
+  width: 49%; }
+  .cobrand-item:before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    transition: 1s; }
+  .cobrand-item:hover:before {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.5s; }
+
+.cobrand-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Roboto";
+  font-size: 72px;
+  line-height: 95px;
+  font-weight: 700;
+  white-space: nowrap; }
+
+@media (max-width: 992px) {
+  .cobrand-title {
+    font-size: 32px;
+    line-height: 43px; } }
+
+@media (max-width: 767px) {
+  .cobrand-item {
+    width: 100%; } }
+
+.customerCard-item {
+  width: 23%;
+  transition: 0.5s; }
+  .customerCard-item:hover {
+    transform: translateY(-10px);
+    transition: 0.5s; }
+
+.customerCard-body {
+  padding: 14px 16px;
+  border: 1px solid #dee2e6; }
+
+.customerCard-pic {
+  width: 100%; }
+
+.customerCard-title, .customerCard-text, .customerCard-date {
+  font-family: "Roboto"; }
+
+.customerCard-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 7px; }
+
+.customerCard-text {
+  margin-bottom: 10px; }
+
+.customerCard-date {
+  font-size: 14px;
+  color: #707070; }
+
+@media (max-width: 992px) {
+  .customerCard-item {
+    width: 45%; } }
+
+@media (max-width: 767px) {
+  .customerCard-item {
+    width: 100%; } }
+
+.indexForm {
+  width: 60%;
+  margin: 0 auto; }
+  .indexForm-btn {
+    display: block;
+    width: 70%;
+    border: none;
+    padding: 16px 0;
+    font-weight: 700;
+    margin: 0 auto;
+    cursor: pointer; }
+    .indexForm-btn:hover {
+      background: #650300; }
+  @media (max-width: 992px) {
+    .indexForm {
+      width: 70%; }
+    .indexForm-btn {
+      width: 60%; } }
+  @media (max-width: 767px) {
+    .indexForm {
+      width: 100%; } }
+
+.form-control {
+  display: block;
+  width: 100%;
+  border: 1px solid #000000;
+  height: 50px;
+  padding: 20px;
+  color: #650300;
+  font-size: 15px;
+  font-weight: 600; }
+  .form-control-textarea {
+    height: 136px; }
+
+@media (max-width: 992px) {
+  .form-control {
+    height: 36px; }
+    .form-control-textarea {
+      height: 100px; } }
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0.2; }
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0.2; }
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0.2; }
 
 /*# sourceMappingURL=all.css.map */

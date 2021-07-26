@@ -28,11 +28,6 @@ body {
       font-size: 20px;
       line-height: 1.5;
       padding-left: 64px;
-      &:hover {
-        color: #fff45c;
-        transition: color 1s ease;
-        cursor: pointer;
-      }
     }
   }
   @include pad {
@@ -64,6 +59,7 @@ body {
 }
 // Footer
 .footer {
+  padding-bottom: 39px;
   &Nav {
     margin-bottom: 36px;
     &-link {
@@ -71,11 +67,6 @@ body {
       color: $white;
       line-height: 1.5;
       padding-right: 48px;
-      &:hover {
-        color: #fff45c;
-        transition: color 1s ease;
-        cursor: pointer;
-      }
     }
   }
   &Contact {
@@ -83,20 +74,17 @@ body {
       margin-bottom: 16px;
     }
     &-icon {
-      width: 44px;
+      width: 40px;
       display: inline-block;
       vertical-align: middle;
-      margin-right: 17px;
+      margin-right: 20px;
     }
     &-link {
       display: block;
       font-family: "Roboto";
       color: $white;
       font-size: 36px;
-      line-height: 48px;
-      &:hover {
-        opacity: 0.5;
-      }
+      line-height: 1.5;
     }
   }
   &Social {
@@ -168,12 +156,9 @@ body {
   }
 }
 .copyright {
-  &-logo {
-    margin-right: 38px;
-  }
   &-text {
     font-family: "Roboto";
-    line-height: 21px;
+    line-height: 1.5;
   }
   @include pad {
     &-logo {

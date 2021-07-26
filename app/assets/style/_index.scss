@@ -1,0 +1,319 @@
+.mainTitle {
+  font-size: 48px;
+  line-height: 67px;
+  font-weight: 700;
+  text-align: center;
+  @include pad {
+    font-size: 32px;
+    line-height: 45px;
+  }
+  @include mobile {
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+//Banner
+.main {
+  &Banner {
+    background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true)
+      no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 840px;
+    &-subtitle {
+      font-size: 36px;
+      line-height: 54px;
+    }
+    &-title {
+      font-size: 64px;
+      line-height: 96px;
+      font-weight: 700;
+    }
+  }
+  @include pad {
+    &Banner {
+      &-subtitle {
+        font-size: 20px;
+        line-height: 39px;
+      }
+      &-title {
+        font-size: 48px;
+        line-height: 67px;
+      }
+    }
+  }
+
+  @include mobile {
+    &Banner {
+      height: 394px;
+      &-subtitle {
+        font-size: 16px;
+        line-height: 22px;
+      }
+      &-title {
+        font-size: 32px;
+        line-height: 45px;
+      }
+    }
+  }
+}
+
+// Feature
+.feature {
+  &-item {
+    width: 20%;
+  }
+  &-icon {
+    margin: 0 auto 40px auto;
+  }
+  &-title {
+    text-align: center;
+    color: $secondary;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  @include pad {
+    &-item {
+      width: 35%;
+      margin-bottom: 40px;
+    }
+    &-icon {
+      width: 80px;
+      margin: 0 auto 16px auto;
+    }
+    &-title {
+      text-align: center;
+      color: $secondary;
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+  }
+  @include mobile {
+    &-item {
+      width: 90%;
+    }
+  }
+}
+
+// 經典系列 Claass
+
+.classGlasses {
+  &-pic {
+    width: 60%;
+  }
+  &-mobileicon {
+    display: none;
+  }
+  &-icon {
+    width: 48px;
+    margin-right: 8px;
+  }
+  &-title {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 63px;
+  }
+
+  @include pad {
+    &-item {
+      flex-direction: row;
+    }
+    &-icon {
+      width: 32px;
+    }
+    &-title {
+      font-size: 28px;
+      line-height: 37px;
+      &::before {
+        width: 32px;
+        height: 25px;
+      }
+    }
+  }
+  @include mobile {
+    &-item {
+      position: relative;
+    }
+    &-pic {
+      width: 100%;
+      margin: 0 auto;
+    }
+    &-mobileicon {
+      display: block;
+      width: 32px;
+      margin-right: 8px;
+    }
+    &-icon {
+      display: none;
+    }
+    &-title {
+      color: $white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+// 聯名 cobrand
+.cobrand {
+  &Bg {
+    background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true)
+      no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  &-item {
+    position: relative;
+    width: 49%;
+    &:before {
+      content: "";
+      background-color: rgba(255, 255, 255, 0.5);
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+      transition: 1s;
+    }
+    &:hover:before {
+      background-color: rgba(255, 255, 255, 0.2);
+      transition: 0.5s;
+    }
+  }
+  &-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Roboto";
+    font-size: 72px;
+    line-height: 95px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  @include pad {
+    &-title {
+      font-size: 32px;
+      line-height: 43px;
+    }
+  }
+  @include mobile {
+    &-item {
+      width: 100%;
+    }
+  }
+}
+//顧客推薦 customer
+.customerCard {
+  &-item {
+    width: 23%;
+    transition: 0.5s;
+    &:hover {
+      transform: translateY(-10px);
+      transition: 0.5s;
+    }
+  }
+  &-body {
+    padding: 14px 16px;
+    border: 1px solid $gray-200;
+  }
+  &-pic {
+    width: 100%;
+  }
+  &-title,
+  &-text,
+  &-date {
+    font-family: "Roboto";
+  }
+  &-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 7px;
+  }
+  &-text {
+    margin-bottom: 10px;
+  }
+  &-date {
+    font-size: 14px;
+    color: $gray-400;
+  }
+  @include pad {
+    &-item {
+      width: 45%;
+    }
+  }
+  @include mobile {
+    &-item {
+      width: 100%;
+    }
+  }
+}
+//聯絡我們 contact
+.indexForm {
+  width: 60%;
+  margin: 0 auto;
+  &-btn {
+    display: block;
+    // width:calc( 100% - 50%) ;
+    width: 70%;
+    border: none;
+    padding: 16px 0;
+    font-weight: 700;
+    margin: 0 auto;
+    cursor: pointer;
+    &:hover {
+      background: $secondary;
+    }
+  }
+  @include pad {
+    & {
+      width: 70%;
+    }
+    &-btn {
+      width: 60%;
+    }
+  }
+  @include mobile {
+    & {
+      width: 100%;
+    }
+  }
+}
+.form {
+  &-control {
+    display: block;
+    width: 100%;
+    border: 1px solid $dark;
+    height: 50px;
+    padding: 20px;
+    color: $secondary;
+    font-size: 15px;
+    font-weight: 600;
+    &-textarea {
+      height: 136px;
+    }
+  }
+  @include pad {
+    &-control {
+      height: 36px;
+      &-textarea {
+        height: 100px;
+      }
+    }
+  }
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0.2;
+}

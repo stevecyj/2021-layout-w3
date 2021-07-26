@@ -78,6 +78,10 @@
 .hoverLink-opacity-5:hover {
   opacity: 0.5;
 }
+.hoverLink-yellow:hover {
+  color: $yellow;
+  transition: color 1s ease;
+}
 
 //Bg Color
 .bg {
